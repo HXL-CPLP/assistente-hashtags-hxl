@@ -1,0 +1,101 @@
+From 099b796eb85dcc3b9d03c7012854fc3671c9f9fb Mon Sep 17 00:00:00 2001
+From: Emerson Rocha Luiz <emerson@alligo.com.br>
+Date: Tue, 14 Apr 2020 12:31:09 -0300
+Subject: [PATCH] Internationalization, Acessibility and HTML syntax quick
+ fixes - Added lang="en" (see
+ https://www.w3.org/International/questions/qa-lang-why) - meta charset before
+ any text, in this case <title> (fix issues with non-ascii programs that may
+ render wrong, as they may default to non-utf8 before find the charset tag);
+ also see
+ https://www.w3.org/International/questions/qa-html-encoding-declarations -
+ <script> tag on body; - The ; on &nbsp fix "Error: Named character reference
+ was not terminated by a semicolon. (Or & should have been escaped as &amp;.)"
+ - Documentation now cites the gen-chooser.py when not using make
+
+Refs https://github.com/covid-taskforce-cplp/dados-covid/issues/17
+---
+ README.md       | 2 +-
+ docs/index.html | 8 ++++----
+ gen-chooser.py  | 8 ++++----
+ 3 files changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/README.md b/README.md
+index 69e86e3..55d96e4 100644
+--- a/README.md
++++ b/README.md
+@@ -15,7 +15,7 @@ Generate the HTML in the docs/ folder via the Makefile provided:
+     
+ Generate the HTML manually:
+ 
+-    $ python generate-tag-assist.py > docs/index.html
++    $ python gen-chooser.py > docs/index.html
+     $ cp style.css docs/style.css
+     
+ # Knowledge base
+diff --git a/docs/index.html b/docs/index.html
+index e7f9977..b248fd2 100644
+--- a/docs/index.html
++++ b/docs/index.html
+@@ -1,10 +1,10 @@
+ <!DOCTYPE html>
+-<html>
++<html lang="en">
+   <head>
++    <meta charset="utf-8"/>
+     <title>HXL hashtag chooser</title>
+     <link rel="stylesheet" href="style.css"/>
+     <link rel="icon" href="icon.png"/>
+-    <meta charset="utf-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+   <body>
+@@ -27,7 +27,7 @@ <h2>What kind of data do you have in the column?</h2>
+         <li><a href="#x_???_000">None of the above</a></li>
+       </ul>
+         <div class="nav">
+-      <a>&nbsp</a>
++      <a>&nbsp;</a>
+           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+         </div>
+     </section>
+@@ -36782,6 +36782,6 @@ <h2>Use this hashtag and attributes</h2>
+         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+       </div>
+     </section>
++    <script src="script.js"></script>
+   </body>
+-  <script src="script.js"></script>
+ </html>
+diff --git a/gen-chooser.py b/gen-chooser.py
+index a6d3e74..eff047e 100644
+--- a/gen-chooser.py
++++ b/gen-chooser.py
+@@ -45,7 +45,7 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
+     if previous_id is not None:
+         print("      <a href=\"#{}\">Back a step</a>".format(esc(previous_id)))
+     else:
+-        print("      <a>&nbsp</a>")
++        print("      <a>&nbsp;</a>")
+     print("          <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">HXL dictionary</a>")
+     print("        </div>")
+     print("    </section>")
+@@ -110,16 +110,16 @@ def display_result(option, hashtag, attributes, previous_id):
+     print("    </section>")
+ 
+ print("<!DOCTYPE html>")
+-print("<html>")
++print("<html lang=\"en\">")
+ print("  <head>")
++print("    <meta charset=\"utf-8\"/>")
+ print("    <title>HXL hashtag chooser</title>")
+ print("    <link rel=\"stylesheet\" href=\"style.css\"/>")
+ print("    <link rel=\"icon\" href=\"icon.png\"/>")
+-print("    <meta charset=\"utf-8\"/>")
+ print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>")
+ print("  </head>")
+ print("  <body>")
+ display_question("top")
++print("    <script src=\"script.js\"></script>")
+ print("  </body>")
+-print("  <script src=\"script.js\"></script>")
+ print("</html>")
