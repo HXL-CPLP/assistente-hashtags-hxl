@@ -52,9 +52,8 @@
                 "dest": "indicator_shape"
             },
             {
-                "text": "Metadados que descrevem a coluna de dados (por exemplo, origem)",
+                "text": "Metadados que descrevem a linha de dados (por exemplo, origem)",
                 "text_en": "Metadata describing the data row (e.g. source)",
-                "text_comment": "Será que é mesmo row (linha) e não column (coluna)? Isso precisa ser revisado",
                 "hashtag": "meta",
                 "dest": "meta_atts"
             },
@@ -62,7 +61,7 @@
                 "text": "Nenhuma das acima",
                 "text_en": "None of the above",
                 "hashtag": "x_???",
-                "note": "As hashtags são parte central do Padrão HXL não podem cobrir todos os tipos especializados de dados humanitários. Se você não encontrar nenhuma correspondência para o que precisa marcar, poderá criar uma hashtag personalizada começando com \"#x_\", por exemplo, \"#x_virulencia\" (favor não usar acentos e cedilha ç).",
+                "note": "As hashtags centrais do Padrão HXL não tem como atender todo tipo mais especializado de dados humanitários. Se você não encontrar nenhuma correspondência para o que precisa marcar, poderá criar uma hashtag personalizada começando com \"#x_\", por exemplo, \"#x_virulencia\" (favor não usar acentos e cedilha ç nas hashtags).",
                 "note_en": "The core HXL hashtags cannot cover every specialised type of humanitarian data. If you cannot find any match for what you need to tag, you are free to create a custom hashtag beginning with \"#x_\", e.g. \"#x_virulence\"."
             }
         ]
@@ -192,16 +191,19 @@
         "question": "Que tipo de lugares?",
         "options": [
             {
-                "text": "Administrative subdivisions (region, country, province, district, etc)",
+                "text": "Subdivisões administrativas (região, país, província, distrito, etc.)",
+                "text_en": "Administrative subdivisions (region, country, province, district, etc)",
                 "dest": "admin_tags"
             },
             {
-                "text": "Latitude and/or longitude",
+                "text": "Latitude e/ou longitude",
+                "text_en": "Latitude and/or longitude",
                 "hashtag": "geo",
                 "dest": "geo_atts"
             },
             {
-                "text": "Specific locations (e.g. camps) or mixed types of locations",
+                "text": "Locais específicos (por exemplo, acampamentos) ou tipos mistos de locais",
+                "text_en": "Specific locations (e.g. camps) or mixed types of locations",
                 "hashtag": "loc",
                 "dest": "loc_atts"
             }
@@ -342,22 +344,26 @@
         ]
     },
     "sector_tags": {
-        "question": "What kind of sector?",
+        "question": "Que tipo de setor?",
+        "question_en": "What kind of sector?",
         "options": [
             {
-                "text": "A humanitarian cluster",
+                "text": "Um cluster humanitário",
+                "text_en": "A humanitarian cluster",
                 "hashtag": "sector",
                 "attribute": "cluster",
                 "dest": "code_atts"
                
             },
             {
-                "text": "Another kind of top-level sector",
+                "text": "Outro tipo de setor de nível superior",
+                "text_en": "Another kind of top-level sector",
                 "hashtag": "sector",
                 "dest": "code_atts"
             },
             {
-                "text": "A subsector",
+                "text": "Um subsetor",
+                "text_en": "A subsector",
                 "hashtag": "subsector",
                 "dest": "code_atts"
             }
@@ -695,76 +701,99 @@
         ]
     },
     "adm_atts": {
-        "question": "How is the location described?",
+        "question": "Como é descrita a localização?",
+        "question_en": "How is the location described?",
         "options": [
             {
-                "text": "By its name",
+                "text": "Pelo seu nome",
+                "text_en": "By its name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "By a code",
+                "text": "Por um código",
+                "text_en": "By a code",
                 "attribute": "code",
                 "dest": "geocode_atts"
             }
         ]
     },
     "lang_atts": {
-        "question": "Do you want to identify the language of the content?",
+        "question": "Deseja especificar o idioma do conteúdo?",
+        "question_en": "Do you want to identify the language of the content?",
         "options": [
             {
-                "text": "No, I want to leave it unspecified"
+                "text": "Não, quero deixar não especificado",
+                "text_en": "No, I want to leave it unspecified"
             },
             {
-                "text": "Yes, the text is in English",
+                "text": "Sim, o texto está em Português",
+                "attribute": "i_pt"
+            },
+            {
+                "text": "Sim, o texto está em Inglês",
+                "text_en": "Yes, the text is in English",
                 "attribute": "i_en"
             },
             {
-                "text": "Yes, the text is in French",
+                "text": "Sim, o texto está em Frances",
+                "text_en": "Yes, the text is in French",
                 "attribute": "i_fr"
             },
             {
-                "text": "Yes, the text is in Arabic",
+                "text": "Sim, o texto está em Árabe",
+                "text_en": "Yes, the text is in Arabic",
                 "attribute": "i_ar"
             },
             {
-                "text": "Yes, the text is in Spanish",
+                "text": "Sim, o texto está em Espanhol",
+                "text_en": "Yes, the text is in Spanish",
                 "attribute": "i_es"
             },
             {
-                "text": "Yes, the text is in Russian",
+                "text": "Sim, o texto está em Russo",
+                "text_en": "Yes, the text is in Russian",
                 "attribute": "i_ru"
             },
             {
-                "text": "Yes, the text is in Swahili",
+                "text": "Sim, o texto está em Suaíli",
+                "text_en": "Yes, the text is in Swahili",
                 "attribute": "i_sw"
             },
             {
-                "text": "The text is in a language not listed here",
+                "text": "O texto está em um idioma não listado aqui",
+                "text_en": "The text is in a language not listed here",
                 "attribute": "i_xx",
-                "note": "Replace the \"xx\" in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog."
+                "note": "Substitua o \"xx\" em +i_xx pelo código de duas letras do padrão ISO 639 para o idioma desejado, por exemplo. +i_tl para língua tagalo.",
+                "note_en": "Replace the \"xx\" in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog."
             }
         ]
     },
     "geocode_atts": {
-        "question": "Do you want to indicate what code list you are using?",
-        "pre-text": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
+        "question": "Deseja indicar qual lista de códigos você está usando?",
+        "question_en": "Do you want to indicate what code list you are using?",
+        "pre-text": "Assumimos ISO3 para países e P-Codes para subdivisões administrativas se não forem especificados.",
+        "pre-text_en": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
         "options": [
             {
-                "text": "No, leave it unspecified"
+                "text": "No, leave it unspecified",
+                "text_en": "No, leave it unspecified"
             },
             {
-                "text": "Yes, specify ISO3 country codes (like \"SYR\" for Syria)",
+                "text": "Sim, deixar explícito que são códigos de país ISO3 (como \"SYR\" para Síria)",
+                "text_en": "Yes, specify ISO3 country codes (like \"SYR\" for Syria)",
                 "attribute": "v_iso3",
                 "include": ["country"]
             },
             {
-                "text": "Yes, specify ISO2 country codes (like \"SY\" for Syria)",
+                "text": "Sim, deixar explícito que são códigos de país ISO2 (como \"SY\" para Síria)",
+                "text_en": "Yes, specify ISO2 country codes (like \"SY\" for Syria)",
                 "attribute": "v_iso2",
                 "include": ["country"]
             },
             {
-                "text": "Yes, specify P-codes",
+                "text": "Sim, deixar explícito que são P-codes",
+                "text_en": "Yes, specify P-codes",
                 "attribute": "v_pcodes",
                 "exclude": ["region", "country"]
             }
@@ -794,25 +823,31 @@
         ]
     },
     "datatype_atts": {
-        "question": "What is the most-specific data type that applies to every indicator value?",
+        "question": "Qual é o tipo de dados mais específico que se aplica a todos os valores de indicadores?",
+        "question_en": "What is the most-specific data type that applies to every indicator value?",
         "options": [
             {
-                "text": "Mixed types, or all text"
+                "text": "Tipos mistos, ou qualquer tipo de texto",
+                "text_en": "Mixed types, or all text"
             },
             {
-                "text": "A boolean (true/false or yes/no-style) value",
+                "text": "Um valor booleano (ao estilo true/false, yes/no, sim/não)",
+                "text_en": "A boolean (true/false or yes/no-style) value",
                 "attribute": "bool"
             },
             {
-                "text": "A percentage",
+                "text": "Uma porcentagem",
+                "text_en": "A percentage",
                 "attribute": "pct"
             },
             {
-                "text": "Any other numeric value",
+                "text": "Qualquer outro valor numérico",
+                "text_en": "Any other numeric value",
                 "attribute": "num"
             },
             {
-                "text": "A web link",
+                "text": "Um link da web",
+                "text_en": "A web link",
                 "attribute": "url"
             }
         ]
@@ -912,46 +947,58 @@
         ]
     },
     "contact_atts": {
-        "question": "What kind of contact information?",
+        "question": "Que tipo de informação de contato?",
+        "question_en": "What kind of contact information?",
         "options": [
             {
-                "text": "Name of a contact person",
+                "text": "Nome da pessoa de contato",
+                "text_en": "Name of a contact person",
                 "attribute": "name"
             },
             {
-                "text": "Email address",
+                "text": "Endereço de e-mail",
+                "text_en": "Email address",
                 "attribute": "email"
             },
             {
-                "text": "Phone number",
+                "text": "Número de telefone",
+                "text_en": "Phone number",
                 "attribute": "phone"
             },
             {
                 "text": "Web site",
+                "text_en": "Web site",
                 "attribute": "url"
             }
         ]
     },
     "meta_atts": {
-        "question": "What kind of row metadata?",
+        "question": "Qual tipo de metadados da linha?",
+        "question_en": "What kind of row metadata?",
         "options": [
             {
-                "text": "A unique identifier for the record/row",
+                "text": "Um identificador exclusivo para o registro/linha",
+                "text_en": "A unique identifier for the record/row",
                 "attribute": "id",
-                "note": "Assumed to be unique only within the dataset, not globally."
+                "note": "Supõe-se que seja exclusivo apenas dentro do seu conjunto de dados, não precisa ser exclusivo globalmente.",
+                "note_en": "Assumed to be unique only within the dataset, not globally."
             },
             {
-                "text": "The source of the data",
+                "text": "A fonte dos dados",
+                "text_en": "The source of the data",
                 "attribute": "source"
             },
             {
-                "text": "A URL for the data in the row",
+                "text": "A URL para os dados na linha",
+                "text_en": "A URL for the data in the row",
                 "attribute": "url"
             },
             {
-                "text": "Metadata not listed above",
+                "text": "Metadados não listados acima",
+                "text_en": "Metadata not listed above",
                 "attribute": "XXX",
-                "note": "You can invent any custom attribute you need to describe your metadata, e.g. +certainty"
+                "note": "Você pode inventar qualquer atributo personalizado necessário para descrever seus metadados, por exemplo +certeza",
+                "note_en": "You can invent any custom attribute you need to describe your metadata, e.g. +certainty"
             }
         ]
     }

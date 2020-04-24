@@ -26,7 +26,7 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     print("    <section class=\"question\" id=\"{}\">".format(esc(html_id)))
     print("      <div class=\"nav\">")
     if id == "top":
-        print("      <a>Assistente de escolha de hashtags HXL (português)</a>")
+        print("      <a>Assistente para escolha de hashtags HXL (em português)</a>")
     else:
         print("      <a href=\"#_top\">Iniciar uma nova hashtag</a>")
     print("      </div>")
@@ -113,7 +113,7 @@ print("<!DOCTYPE html>")
 print("<html lang=\"pt\">")
 print("  <head>")
 print("    <meta charset=\"utf-8\"/>")
-print("    <title>Assistente de escolha de hashtags HXL (português)</title>")
+print("    <title>Assistente para escolha de hashtags HXL (em português)</title>")
 print("    <link rel=\"stylesheet\" href=\"style.css\"/>")
 print("    <link rel=\"icon\" href=\"icon.png\"/>")
 print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>")
