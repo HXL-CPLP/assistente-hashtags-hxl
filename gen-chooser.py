@@ -40,7 +40,7 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     if "post-text" in question:
         print("        <p class=\"post-text\">{}</p>".format(esc(question["post-text"])))
     if hashtag is not None:
-        print("      <p>So far: <span class=\"tagspec\">{}</span></p>".format(esc(make_tagspec(hashtag, attributes))))
+        print("      <p>Até o momento: <span class=\"tagspec\">{}</span></p>".format(esc(make_tagspec(hashtag, attributes))))
     print("        <div class=\"nav\">")
     if previous_id is not None:
         print("      <a href=\"#{}\">Voltar um passo</a>".format(esc(previous_id)))
@@ -92,7 +92,7 @@ def display_option(option, hashtag, attributes):
 
 def display_result(option, hashtag, attributes, previous_id):
     print("    <section class=\"result\" id=\"{}_000\">".format(esc(make_html_id(id, hashtag, attributes))))
-    print("      <div class=\"nav\"><a href=\"#_top\">New hashtag</a></div>")
+    print("      <div class=\"nav\"><a href=\"#_top\">Iniciar uma nova hashtag</a></div>")
     print("      <h2>Use esta hashtag e atributos</h2>")
     print("      <div class=\"tagspec-container\">")
     print("        <div class=\"tagspec final-tagspec\">{}</div>".format(esc(make_tagspec(hashtag, attributes))))
@@ -110,7 +110,7 @@ def display_result(option, hashtag, attributes, previous_id):
     print("    </section>")
 
 print("<!DOCTYPE html>")
-print("<html lang=\"en\">")
+print("<html lang=\"pt\">")
 print("  <head>")
 print("    <meta charset=\"utf-8\"/>")
 print("    <title>Assistente de escolha de hashtags HXL (português)</title>")

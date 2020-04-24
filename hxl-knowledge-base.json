@@ -62,7 +62,7 @@
                 "text": "Nenhuma das acima",
                 "text_en": "None of the above",
                 "hashtag": "x_???",
-                "note": "As hashtags são parte central do Padrão HXL não podem cobrir todos os tipos especializados de dados humanitários. Se você não encontrar nenhuma correspondência para o que precisa marcar, poderá criar uma hashtag personalizada começando com \"#x_\", por exemplo, \"#x_virulencia\" (favor não usar acentos e cedilha ç)",
+                "note": "As hashtags são parte central do Padrão HXL não podem cobrir todos os tipos especializados de dados humanitários. Se você não encontrar nenhuma correspondência para o que precisa marcar, poderá criar uma hashtag personalizada começando com \"#x_\", por exemplo, \"#x_virulencia\" (favor não usar acentos e cedilha ç).",
                 "note_en": "The core HXL hashtags cannot cover every specialised type of humanitarian data. If you cannot find any match for what you need to tag, you are free to create a custom hashtag beginning with \"#x_\", e.g. \"#x_virulence\"."
             }
         ]
@@ -248,45 +248,54 @@
         ]
     },
     "event_tags": {
-        "question": "What kind of crisis or event?",
+        "question": "Que tipo de crise ou evento?",
+        "question_en": "What kind of crisis or event?",
         "options": [
             {
-                "text": "A broad humanitarian crisis/emergency",
+                "text": "Uma ampla crise/emergência humanitária",
+                "text_en": "A broad humanitarian crisis/emergency",
                 "hashtag": "crisis",
                 "dest": "code_atts"
             },
             {
-                "text": "A specific event incident",
+                "text": "Um incidente de evento específico",
+                "text_en": "A specific event incident",
                 "hashtag": "event",
                 "dest": "id_atts"
             },
             {
-                "text": "Information about a non-humanitarian group involved an incident",
+                "text": "Informações sobre um grupo não-humanitário envolvido em um incidente",
+                "text_en": "Information about a non-humanitarian group involved an incident",
                 "hashtag": "group",
                 "dest": "id_atts"
             },
             {
-                "text": "Barriers or restrictions on access",
+                "text": "Barreiras ou restrições de acesso",
+                "text_en": "Barriers or restrictions on access",
                 "hashtag": "access",
                 "dest": "code_atts"
             },
             {
-                "text": "The cause of an incident",
+                "text": "A causa de um incidente",
+                "text_en": "The cause of an incident",
                 "hashtag": "cause",
                 "dest": "code_atts"
             },
             {
-                "text": "The frequency of an incident",
+                "text": "A frequência de um incidente",
+                "text_en": "The frequency of an incident",
                 "hashtag": "frequency",
                 "dest": "code_atts"
             },
             {
-                "text": "The severity of an incident",
+                "text": "A gravidade de um incidente",
+                "text_en": "The severity of an incident",
                 "hashtag": "severity",
                 "dest": "code_atts"
             },
             {
-                "text": "An impact of an incident",
+                "text": "O impacto de um incidente",
+                "text_en": "An impact of an incident",
                 "hashtag": "impact",
                 "dest": "code_atts"
             }
@@ -355,151 +364,195 @@
         ]
     },
     "cash_tags": {
-        "question": "What kind of cash/finance information?",
+        "question": "Que tipo de dinheiro/informação financeira?",
+        "question_en": "What kind of cash/finance information?",
         "options": [
             {
-                "text": "An amount of money",
+                "text": "Uma quantidade de dinheiro",
+                "text_en": "An amount of money",
                 "hashtag": "value",
                 "dest": "value_atts"
             },
             {
-                "text": "A monetary currency",
+                "text": "Uma moeda monetária",
+                "text_en": "A monetary currency",
                 "hashtag": "currency",
                 "attribute": "code",
-                "note": "Preferred content is ISO 4217 currency codes, such as \"CFA\" for the West African franc."
+                "note": "O conteúdo preferido é códigos de moeda ISO 4217, como \"CFA\" para o franco da África Ocidental.",
+                "note_en": "Preferred content is ISO 4217 currency codes, such as \"CFA\" for the West African franc."
             },
             {
-                "text": "A modality/method of cash transfer",
+                "text": "Uma modalidade/método de transferência de renda",
+                "text_en": "A modality/method of cash transfer",
                 "hashtag": "modality",
                 "dest": "code_atts"
             },
             {
-                "text": "The channel through which money is transferred",
+                "text": "O canal pelo qual o dinheiro é transferido",
+                "text_en": "The channel through which money is transferred",
                 "hashtag": "channel",
                 "dest": "code_atts"
             }
         ]
     },
     "impact_atts": {
-        "question": "What is the humanitarian situation?",
+        "question": "Qual é a situação humanitária?",
+        "question_en": "What is the humanitarian situation?",
         "options": [
             {
-                "text": "No, the situation is unspecified",
+                "text": "Não, a situação não é especificada",
+                "text_en": "No, the situation is unspecified",
                 "dest": "gender_atts"
             },
             {
-                "text": "People killed",
+                "text": "Pessoas mortas",
+                "text_en": "People killed",
                 "dest": "gender_atts",
                 "attribute": "killed",
                 "exclude": ["inneed", "targeted", "reached"]
             },
             {
-                "text": "People injured",
+                "text": "Pessoas feridas",
+                "text_en": "People injured",
                 "dest": "gender_atts",
                 "attribute": "injured"
             },
             {
-                "text": "People abducted",
+                "text": "Pessoas sequestradas",
+                "text_en": "People abducted",
                 "dest": "gender_atts",
                 "attribute": "abducted"
             },
             {
-                "text": "All displaced people (internal or external)",
+                "text": "Todas as pessoas deslocadas (internas ou externas)",
+                "text_en": "All displaced people (internal or external)",
                 "dest": "gender_atts",
                 "attribute": "displaced"
             },
             {
-                "text": "Internally-displaced people (IDPs)",
+                "text": "Deslocados internos / refugiados internos (em inglês: internally displaced people, IDP)",
+                "text_en": "Internally-displaced people (IDPs)",
                 "dest": "gender_atts",
                 "attribute": "idps"
             },
             {
-                "text": "Refugees",
+                "text": "Pessoas refugiadas",
+                "text_en": "Refugees",
+                "text_comment": "Usando 'Pessoas Redugiadas' pois é um genero neutro",
                 "dest": "gender_atts",
                 "attribute": "refugees"
             }
         ]
     },
     "gender_atts": {
-        "question": "What is the gender specific gender?",
+        "question": "Se pertinente, qual gênero específico?",
+        "question_en": "What is the gender specific gender?",
+        "question_comment": "Talvez o original em ingles precise de melhorias na forma escrita",
         "options": [
             {
-                "text": "All genders are included",
+                "text": "Todos os gêneros estão incluídos",
+                "text_en": "All genders are included",
                 "dest": "age_atts"
             },
             {
-                "text": "Female people only",
+                "text": "Somente mulheres",
+                "text_en": "Female people only",
                 "dest": "age_atts",
                 "attribute": "f"
             },
             {
-                "text": "Male people only",
+                "text": "Somente homens",
+                "text_en": "Male people only",
                 "dest": "age_atts",
                 "attribute": "m"
             },
             {
-                "text": "Non-gender-binary people only",
+                "text": "Somente pessoas de gênero não-binário",
+                "text_en": "Non-gender-binary people only",
                 "dest": "age_atts",
                 "attribute": "i"
             }
         ]
     },
     "age_atts": {
-        "question": "Do the numbers apply only to a specific age group?",
+        "question": "Os números se aplicam apenas a uma faixa etária específica?",
+        "question_en": "Do the numbers apply only to a specific age group?",
         "options": [
             {
-                "text": "All ages are included",
-                "note": "The values should always be numbers"
+                "text": "Todas as idades estão incluídas",
+                "text_en": "All ages are included",
+                "note": "Os valores devem sempre ser números.",
+                "note_en": "The values should always be numbers"
             },
             {
-                "text": "Any children (might include infants or adolescents)",
+                "text": "Qualquer criança (pode incluir bebês ou adolescentes)",
+                "text_en": "Any children (might include infants or adolescents)",
                 "attribute": "children",
-                "note": "The values should always be numbers. You may also add a custom attribute like +age_5_12 to give a specific range."
+                "note": "Os valores devem sempre ser números. Você também pode adicionar um atributo personalizado como +age_5_12 (de 5 a 12 anos, inclusive) para fornecer um intervalo específico.",
+                "note_en": "The values should always be numbers. You may also add a custom attribute like +age_5_12 to give a specific range."
             },
             {
-                "text": "Infants only",
+                "text": "Somente bebês",
+                "text_en": "Infants only",
                 "attribute": "infants",
-                "note": "The values should always be numbers. You may also add a custom attribute like +age_0_2 to give a specific range."
+                "note": "Os valores devem sempre ser números. Você também pode adicionar um atributo personalizado como +age_0_2 (de 0 a 2 anos, inclusive) para fornecer um intervalo específico.",
+                "note_en": "The values should always be numbers. You may also add a custom attribute like +age_0_2 to give a specific range."
             },
             {
-                "text": "Adolescents only",
+                "text": "Apenas adolescentes",
+                "text_en": "Adolescents only",
                 "attribute": "adolescents",
-                "note": "The values should always be numbers. You may also add a custom attribute like +age_12_17 to give a specific range."
+                "note": "Os valores devem sempre ser números. Você também pode adicionar um atributo personalizado como +age_12_17 (de 12 a 17 anos, inclusive) para fornecer um intervalo específico.",
+                "note_en": "The values should always be numbers. You may also add a custom attribute like +age_12_17 to give a specific range."
             },
             {
-                "text": "Any adults (might include adolescents or elderly people",
+                "text": "Qualquer adulto (pode incluir adolescentes ou idosos)",
+                "text_en": "Any adults (might include adolescents or elderly people",
+                "text_comment": "Faltou um ) no original em ingles",
                 "attribute": "adults",
-                "note": "The values should always be numbers. You may also add a custom attribute like +age_18_64 to give a specific range."
+                "note": "Os valores devem sempre ser números. Você também pode adicionar um atributo personalizado como +age_18_64 (de 18 a 64 anos, inclusive) para fornecer um intervalo específico.",
+                "note_en": "The values should always be numbers. You may also add a custom attribute like +age_18_64 to give a specific range."
             },
             {
-                "text": "Elderly people only",
+                "text": "Apenas idosos",
+                "text_en": "Elderly people only",
                 "attribute": "elderly",
-                "note": "The values should always be numbers. You may also add a custom attribute like +age_65_ to give a specific range."
+                "note": "Os valores devem sempre ser números. Você também pode adicionar um atributo personalizado como +age_65_ (igual ou maior que 65 anos) para fornecer um intervalo específico.",
+                "note_en": "The values should always be numbers. You may also add a custom attribute like +age_65_ to give a specific range."
             }
         ]
     },
     "geo_atts": {
-        "question": "What kind of geographic information do you want to tag?",
+        "question": "Que tipo de informação geográfica você deseja marcar?",
+        "question_en": "What kind of geographic information do you want to tag?",
         "options": [
             {
-                "text": "Latitude only",
+                "text": "Apenas latitude",
+                "text_en": "Latitude only",
                 "attribute": "lat",
-                "note": "The preferred format for latitude is a decimal value, e.g. \"8.5\" instead of \"8 30.0N\"."
+                "note": "O formato preferido para latitude é um valor decimal, i.e. \"8.5\" em vez de \"8 30.0N\".",
+                "note_en": "The preferred format for latitude is a decimal value, e.g. \"8.5\" instead of \"8 30.0N\"."
             },
             {
-                "text": "Longitude only",
+                "text": "Apenas longitude",
+                "text_en": "Longitude only",
                 "attribute": "lon",
-                "note": "The preferred format for longitude is a decimal value, e.g. \"-75.5\" instead of \"75 30.0W\"."
+                "note": "O formato preferido para longitude é um valor decimal, i.e. \"-75.5\" em vez de \"75 30.0W\".",
+                "note_en": "The preferred format for longitude is a decimal value, e.g. \"-75.5\" instead of \"75 30.0W\"."
             },
             {
-                "text": "Latitude and longitude together in one field",
+                "text": "Latitude e longitude juntas em um campo",
+                "text_en": "Latitude and longitude together in one field",
                 "attribute": "latlon",
-                "note": "The preferred format is the decimal latitude separated by a comma from the decimal longitude, e.g. \"8.5, -75.5\"."
+                "note": "O formato preferido é a latitude decimal separada por uma vírgula da longitude decimal, i.e. \"8.5, -75.5\".",
+                "note_en": "The preferred format is the decimal latitude separated by a comma from the decimal longitude, e.g. \"8.5, -75.5\"."
             },
             {
-                "text": "Elevation above sea level",
+                "text": "Elevação acima do nível do mar",
+                "text_en": "Elevation above sea level",
                 "attribute": "elev",
-                "note": "The preferred unit is metres above sea level."
+                "note": "A unidade preferida é metros acima do nível do mar",
+                "note_en": "The preferred unit is metres above sea level."
             }
         ]
     },
@@ -528,92 +581,116 @@
         ]
     },
     "loc_atts": {
-        "question": "What kind of locations are they?",
+        "question": "Que tipo de localizações são elas?",
+        "question_en": "What kind of locations are they?",
         "options": [
             {
-                "text": "Camps",
+                "text": "Acampamentos",
+                "text_en": "Camps",
                 "attribute": "camp",
                 "dest": "movement_atts"
             },
             {
-                "text": "Facilities (health, education, etc)",
+                "text": "Instalações (saúde, educação, etc)",
+                "text_en": "Facilities (health, education, etc)",
                 "attribute": "facility",
                 "dest": "adm_atts"
             },
             {
-                "text": "Marketplaces",
+                "text": "Local de comércio",
+                "text_en": "Marketplaces",
                 "attribute": "market",
                 "dest": "adm_atts"
             },
             {
-                "text": "None of the above",
+                "text": "Nenhuma das acima",
+                "text_en": "None of the above",
                 "dest": "movement_atts"
             }
         ]
     },
     "id_atts": {
-        "question": "What kind of information do you want to provide?",
+        "question": "Que tipo de informação você deseja fornecer?",
+        "question_en": "What kind of information do you want to provide?",
         "options": [
             {
-                "text": "A human-readable name",
+                "text": "Um nome legível por humanos",
+                "text_en": "A human-readable name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "A unique identifier",
+                "text": "Um identificador exclusivo",
+                "text_en": "A unique identifier",
                 "attribute": "id"
             },
             {
-                "text": "A type/classification",
+                "text": "Um tipo e/ou uma classificação",
+                "text_en": "A type/classification",
                 "attribute": "type"
             }
         ]
     },
     "code_atts": {
-        "question": "What kind of information do you want to provide?",
+        "question": "Que tipo de informação você deseja fornecer?",
+        "question_en": "What kind of information do you want to provide?",
         "options": [
             {
-                "text": "A human-readable name",
+                "text": "Um nome legível por humanos",
+                "text_en": "A human-readable name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "A unique machine code",
+                "text": "Um código de máquina exclusivo",
+                "text_en": "A unique machine code",
                 "attribute": "code"
             },
             {
-                "text": "A type/classification",
+                "text": "Um tipo e/ou uma classificação",
+                "text_en": "A type/classification",
                 "attribute": "type",
                 "exclude": ["status"]
             }
         ]
     },
     "date_atts": {
-        "question": "What kind of a date is this?",
+        "question": "Que tipo de data é esta?",
+        "question_en": "What kind of a date is this?",
         "options": [
             {
-                "text": "Unspecified",
-                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                "text": "Não especificado",
+                "text_en": "Unspecified",
+                "note": "O formato de data preferido é YYYY-MM-DD, i.e. \"2019-04-01\". Você também pode abreviar para apenas o mês (\"2019-04\") ou apenas o ano (\"2019\").",
+                "note_en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "A start date",
+                "text": "Uma data de início",
+                "text_en": "A start date",
                 "attribute": "start",
-                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                "note": "O formato de data preferido é YYYY-MM-DD, i.e. \"2019-04-01\". Você também pode abreviar para apenas o mês (\"2019-04\") ou apenas o ano (\"2019\").",
+                "note_en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "An end date",
+                "text": "Uma data final",
+                "text_en": "An end date",
                 "attribute": "end",
-                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                "note": "O formato de data preferido é YYYY-MM-DD, i.e. \"2019-04-01\". Você também pode abreviar para apenas o mês (\"2019-04\") ou apenas o ano (\"2019\").",
+                "note_en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "A specific date when something happened",
+                "text": "Uma data específica em que algo aconteceu",
+                "text_en": "A specific date when something happened",
                 "attribute": "occurred",
-                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                "note": "O formato de data preferido é YYYY-MM-DD, i.e. \"2019-04-01\". Você também pode abreviar para apenas o mês (\"2019-04\") ou apenas o ano (\"2019\").",
+                "note_en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "A specific date when something was reported",
+                "text": "Uma data específica em que algo foi relatado",
+                "text_en": "A specific date when something was reported",
                 "attribute": "reported",
-                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                "note": "O formato de data preferido é YYYY-MM-DD, i.e. \"2019-04-01\". Você também pode abreviar para apenas o mês (\"2019-04\") ou apenas o ano (\"2019\").",
+                "note_en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             }
         ]
     },
