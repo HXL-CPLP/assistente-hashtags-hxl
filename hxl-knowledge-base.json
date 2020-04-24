@@ -1,55 +1,69 @@
 {
     "top": {
-        "question": "What kind of data do you have in the column?",
+        "question": "Que tipo de dados você tem na coluna?",
+        "question_en": "What kind of data do you have in the column?",
         "options": [
             {
-                "text": "Numbers of people (e.g. census or needs overview)",
+                "text": "Número de pessoas (por exemplo, censo ou visão geral de necessidades)",
+                "text_en": "Numbers of people (e.g. census or needs overview)",
                 "dest": "people_tags"
             },
             {
-                "text": "Places",
+                "text": "Locais",
+                "text_en": "Places",
                 "dest": "place_tags"
             },
             {
-                "text": "Survey or assessment results",
+                "text": "Resultados de pesquisa ou avaliação de necessidades",
+                "text_en": "Survey or assessment results",
                 "dest": "survey_tags"
             },
             {
-                "text": "Humanitarian organisations",
+                "text": "Organizações humanitárias",
+                "text_en": "Humanitarian organisations",
                 "hashtag": "org",
                 "dest": "org_atts"
             },
             {
-                "text": "Humanitarian response (activities, clusters, etc.)",
+                "text": "Resposta humanitária (atividades, grupos, etc.)",
+                "text_en": "Humanitarian response (activities, clusters, etc.)",
                 "dest": "response_tags"
             },
             {
-                "text": "Crises or events (e.g. security incidents)",
+                "text": "Crises ou eventos (por exemplo, incidentes de segurança)",
+                "text_en": "Crises or events (e.g. security incidents)",
                 "dest": "event_tags"
             },
             {
-                "text": "Dates",
+                "text": "Datas",
+                "text_en": "Dates",
                 "hashtag": "date",
                 "dest": "date_atts"
             },
             {
-                "text": "Cash or financial information",
+                "text": "Dinheiro ou informações financeiras",
+                "text_en": "Cash or financial information",
                 "dest": "cash_tags"
             },
             {
-                "text": "General humanitarian indicators",
+                "text": "Indicadores humanitários gerais",
+                "text_en": "General humanitarian indicators",
                 "hashtag": "indicator",
                 "dest": "indicator_shape"
             },
             {
-                "text": "Metadata describing the data row (e.g. source)",
+                "text": "Metadados que descrevem a coluna de dados (por exemplo, origem)",
+                "text_en": "Metadata describing the data row (e.g. source)",
+                "text_comment": "Será que é mesmo row (linha) e não column (coluna)? Isso precisa ser revisado",
                 "hashtag": "meta",
                 "dest": "meta_atts"
             },
             {
-                "text": "None of the above",
+                "text": "Nenhuma das acima",
+                "text_en": "None of the above",
                 "hashtag": "x_???",
-                "note": "The core HXL hashtags cannot cover every specialised type of humanitarian data. If you cannot find any match for what you need to tag, you are free to create a custom hashtag beginning with \"#x_\", e.g. \"#x_virulence\"."
+                "note": "As hashtags são parte central do Padrão HXL não podem cobrir todos os tipos especializados de dados humanitários. Se você não encontrar nenhuma correspondência para o que precisa marcar, poderá criar uma hashtag personalizada começando com \"#x_\", por exemplo, \"#x_virulencia\" (favor não usar acentos e cedilha ç)",
+                "note_en": "The core HXL hashtags cannot cover every specialised type of humanitarian data. If you cannot find any match for what you need to tag, you are free to create a custom hashtag beginning with \"#x_\", e.g. \"#x_virulence\"."
             }
         ]
     },
@@ -69,57 +83,67 @@
         "pre-text": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools."
     },
     "people_tags": {
-        "question": "What is the humanitarian context?",
+        "question": "Qual é o contexto humanitário?",
+        "question_en": "What is the humanitarian context?",
         "options": [
             {
-                "text": "General population (including those not affected by the crisis)",
+                "text": "População geral (incluindo aquelas não afetadas pela crise)",
+                "text_en": "General population (including those not affected by the crisis)",
                 "dest": "gender_atts",
                 "hashtag": "population"
             },
             {
-                "text": "All individuals affected by the crisis",
+                "text": "Todos os indivíduos afetados pela crise",
+                "text_en": "All individuals affected by the crisis",
                 "hashtag": "affected",
                 "attribute": "ind",
                 "dest": "impact_atts"
             },
             {
-                "text": "All households affected by the crisis",
+                "text": "Todas as famílias/moradias afetadas pela crise",
+                "text_en": "All households affected by the crisis",
                 "hashtag": "affected",
                 "attribute": "hh",
                 "dest": "impact_atts"
             },
             {
-                "text": "All individuals in need of humanitarian assistance",
+                "text": "Todos os indivíduos que precisam de assistência humanitária",
+                "text_en": "All individuals in need of humanitarian assistance",
                 "hashtag": "inneed",
                 "attribute": "ind",
                 "dest": "impact_atts"
             },
             {
-                "text": "All households in need of humanitarian assistance",
+                "text": "Todas as famílias/moradias que precisam de assistência humanitária",
+                "text_en": "All households in need of humanitarian assistance",
                 "hashtag": "inneed",
                 "attribute": "hh",
                 "dest": "impact_atts"
             },
             {
-                "text": "All individuals targeted for humanitarian assistance",
+                "text": "Todos os indivíduos que são foco de assistência humanitária",
+                "text_en": "All individuals targeted for humanitarian assistance",
                 "hashtag": "targeted",
                 "attribute": "ind",
                 "dest": "impact_atts"
             },
             {
-                "text": "All households targeted for humanitarian assistance",
+                "text": "Todas as famílias/moradias que são foco de assistência humanitária",
+                "text_en": "All households targeted for humanitarian assistance",
                 "hashtag": "targeted",
                 "attribute": "hh",
                 "dest": "impact_atts"
             },
             {
-                "text": "Only individuals actually reached with humanitarian assistance",
+                "text": "Somente indivíduos que, de fato, são alcançados pela assistência humanitária",
+                "text_en": "Only individuals actually reached with humanitarian assistance",
                 "hashtag": "reached",
                 "attribute": "ind",
                 "dest": "impact_atts"
             },
             {
-                "text": "Only households actually reached with humanitarian assistance",
+                "text": "Somente famílias/moradias que, de fato, são alcançadas pela assistência humanitária",
+                "text_en": "Only households actually reached with humanitarian assistance",
                 "hashtag": "reached",
                 "attribute": "hh",
                 "dest": "impact_atts"
@@ -127,7 +151,8 @@
         ]
     },
     "survey_tags": {
-        "question": "What kind of survey/assessment information?",
+        "question": "Que tipo de de pesquisa/avaliação de necessidades?",
+        "question_en": "What kind of survey/assessment information?",
         "options": [
             {
                 "text": "Individual respondees (e.g. people, households, or merchants)",
@@ -164,7 +189,7 @@
         "post-text": "CAUTION: survey results are often sensitive data."
     },
     "place_tags": {
-        "question": "What kind of places?",
+        "question": "Que tipo de lugares?",
         "options": [
             {
                 "text": "Administrative subdivisions (region, country, province, district, etc)",
