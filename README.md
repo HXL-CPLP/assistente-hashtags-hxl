@@ -1,5 +1,14 @@
 # Assistente para escolha de hashtags HXL (em português)
-**Sistema especialista em português para seleção de hashtags HXL. Usa script python para gerar página HTML estática usando uma base de conhecimentos sobre o Padrão HXL que está [encodada em formato JSON](hxl-knowledge-base.json).**
+
+> Sistema especialista em português para seleção de hashtags HXL. Usa script python para gerar página HTML estática usando uma base de conhecimentos sobre o Padrão HXL que está [encodada em formato JSON](hxl-knowledge-base.json).
+
+[![Standard HXL](https://img.shields.io/badge/Standard-HXL-%23F26459)](https://hxlstandard.org/)
+![GitHub](https://img.shields.io/github/license/HXL-CPLP/assistente-hashtags-hxl)
+[![Site](https://img.shields.io/badge/Site-hxl.etica.ai%2Fassistente--hashtags--hxl-blue)](https://hxl.etica.ai/assistente-hashtags-hxl)
+[![GitHub stars](https://img.shields.io/github/stars/HXL-CPLP/assistente-hashtags-hxl?style=social)](https://github.com/HXL-CPLP/assistente-hashtags-hxl/)
+
+[![Grupo de Usuários do Padrão HXL da Comunidade dos Países de Língua Portuguesa](https://hxl.etica.ai/img/banner-hxl-cplp.png)](https://padrao-hxl.etica.ai/)
+
 
 **Para acessar o assistente: <https://hxl.etica.ai/assistente-hashtags-hxl/>.**
 
