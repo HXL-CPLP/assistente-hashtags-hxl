@@ -51,5 +51,12 @@ Para gerar o HTML diretamente:
 # Knowledge base
 The knowledge base for the chooser is in the file hxl-knowledge-base.json. Instructions on updating it will come soon.
 
+# Aviso Legal
+Tanto o site <https://padrao-hxl.etica.ai> como a organização no GitHub
+<https://github.com/HXL-CPLP> e seus projetos são realizações voluntárias do
+**Grupo de Usuários do Padrão HXL da Comunidade dos Países de Língua
+Portuguesa** e, ainda que possa haver colaboração ou uso de conteúdo,
+**não somos afiliados ou endossados por HXLStandard.org, OCHA, IFRC e afins**.
+
 # License
 This script and the HXL knowledge base are released into the Public Domain. Use with good cheer.
